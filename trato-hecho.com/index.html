@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://trato-hecho.com/wp-content/uploads/2020/03/Logo3-e1598462690260.png">
+    <style>
+       body{
+        margin: 0;
+        font-family: "Montserrat", Sans-serif;
+    }
+    
+    /*----------------header----------------*/
+    .header__home{
+        padding: 5%;
+        margin: 1%;
+        background-color: #fff;
+        position: relative;
+    }
+    .header__logo--container{
+        margin: 0;
+    }
+    .header__logo{
+       width: 250px;
+    }
+    .header__nav--menu{
+        list-style: none;
+        padding: 0;
+    }
+    #header_nav-menu-id{
+        display: none;
+    }
+    .dropdown_menu-8{
+        animation: growDown 400ms ease-in-out forwards;
+        transform-origin: top center
+    }
+    @keyframes growDown {
+        0% {
+            transform: scaleY(0)
+        }
+        80% {
+            transform: scaleY(1.1)
+        }
+        100% {
+            transform: scaleY(1)
+        }
+    }
+    .header__nav--menu-link{
+        display: block;
+        margin-top: 5px;
+        padding: 14px 16px;
+        text-decoration: none;
+        color: #000;
+        font-size: 14px;
+        border-radius: 5px;
+        color: #39207C;
+    }
+    .header__nav--menu-link:hover{
+        background-color: #39207C;
+        color: white;
+        font-weight: 600;
+    }
+    .header__icon-menu{
+        position: absolute;
+        top: 0;
+        right: 0;
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+        border-radius: 50px;
+        padding: 6px 6px 4px 6px;
+        margin-top: 4%;
+    }
+    .header__icon-menu--img{
+        width: 30px;
+    }
+    /*----------------hero----------------*/
+    .hero{
+        background-image: url("https://trato-hecho.com/wp-content/uploads/2020/03/fondo1.png");
+        height: 500px;
+        background-position-x: 50%;
+        background-position-y: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 1s ease-out;
+    
+    }
+    .hero__text{
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        font-weight: 600;
+        padding: 7px;
+    }
+    .hero__button{
+        background-color: #F44C08;
+        border: none;
+        padding: 15px;
+        margin: 5px;
+        border-radius: 5px;
+    }
+    .hero__link{
+        color: white;
+        text-decoration:none;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .hero__button:hover, .hero__button:hover .hero__link {
+        background-color: white;
+        color:#F44C08;
+    }
+    
+    /*-----------Avalúo----------------*/
+    
+    .avaluo-section{
+        text-align: center;
+        padding: 10% 5%;
+        background-image: url("https://trato-hecho.com/wp-content/uploads/2020/03/Grupo-981@2x.png");
+        background-repeat: no-repeat;
+    }
+    .avaluo__button{
+        width: 100%;
+        height: 50px;
+        border: none;
+        background: #39207C;
+        border-radius: 10px;
+        box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.1);
+        padding: 1%;
+    }
+    .avaluo__button:hover{
+        background: #F44C08;
+    }
+    .avaluo__button--link{
+        font-size: 16px;
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+        white-space: pre-wrap;
+    }
+    
+    
+    /*---------------Footer---------------------------*/
+    .footer{
+        border-top: 1px solid #EEEEEE;
+        display: flex;
+        padding-top: 10px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .footer__menu{
+        padding: 1% 5%;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__menu--list{
+        list-style: none;
+    }
+    .footer__menu--link{
+        text-decoration: none;
+        color: #39207C;
+        font-size: 12px;
+    }
+    .footer__menu--title{
+        color: #39207C;
+        font-size: 16px;
+        font-weight: 600
+    }
+    .footer__phone{
+        font-size: 13px;
+        text-align: center;
+        margin-bottom: 5%;
+        color: #39207C;
+    }
+    .footer__menu--map{
+        text-align: center;
+        font-size: 10px;
+    }
+    .footer__menu--map iframe{
+        width: 100%;
+        height: 200px;
+    }
+    
+    .footer__social{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    .footer__social--item{
+        margin: 0 10px;
+    }
+    .footer__social--img{
+        width: 40px;
+    }
+    
+    
+    /*--------whatsapp-button-------------*/
+    .social-button{
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        cursor: pointer;
+        z-index: 99999999;
+    }
+    
+    /*media PC display---------------*/
+    @media screen and (min-width: 769px){
+        /*----------------header----------------*/
+        .header__home{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2%;
+        }
+        .header__icon-menu{
+            display: none;
+        }
+        #header_nav-menu-id{
+            display: flex;
+        }
+        .header__nav--menu{
+            display: flex;
+        }
+    
+        /*--------------hero----------------*/
+        .hero{
+            background-size: 1900px;
+            height: 720px;
+            background-repeat: no-repeat;
+        }
+        .hero__text{
+            font-size: 26px;
+            padding: 5px;
+        }
+        .hero__button{       
+            padding: 18px;
+            margin: 20px;
+            cursor: pointer;
+        }
+        .hero__link{
+            font-size: 20px;
+        }
+        /*----------Avaluo----------------*/
+        .avaluo-section{
+            padding:  5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+        }
+        .avaluo__button{
+            width: 40%;
+            height: 70px;
+            cursor: pointer;    
+        }
+    
+        
+    } 
+    </style>
+    <title>Trato Hecho</title>
+</head>
+<body>
+    <header class="header__home "> 
+        <figure class="header__logo--container">
+            <a href="https://trato-hecho.com/">
+                <img class="header__logo" src="https://trato-hecho.com/wp-content/uploads/2020/03/Grupo-666@2x.png" alt="logo">
+            </a>
+        </figure>
+        <nav class="header__nav"  id="header_nav-menu-id">
+            <ul class="header__nav--menu dropdown_menu-8">
+                <li class="header__nav--menu-item">
+                    <a href="https://trato-hecho.com/propiedades" class="header__nav--menu-link">Ver Propiedades</a>
+                </li>
+                <li class="header__nav--menu-item">
+                    <a href="https://trato-hecho.com/como-funciona" class="header__nav--menu-link">¿Cómo funciona?</a>
+                </li>
+                <!--<li class="header__nav--menu-item">
+                    <a href="https://trato-hecho.com/login" class="header__nav--menu-link">Inicia Sesión o Regístrate</a>
+                </li>-->
+            </ul>
+        </nav>
+        <a href="javascript:void(0);" class="header__icon-menu" onclick="myFunction()">
+            <i class="fa fa-bars">
+                <img class="header__icon-menu--img" src="https://trato-hecho.com/wp-content/uploads/2020/08/lista-1.svg" alt="menu">                
+            </i>
+        </a>
+    </header>
+    <main class="hero">
+        <p class="hero__text">Vender o comprar una propiedad nunca fue tan fácil y seguro.
+            <br><br>Trato hecho, tu plataforma de confianza.</p>
+        <div class="hero__buttons">
+            <button class="hero__button">
+                <a class="hero__link" href="https://trato-hecho.com/propiedades">Comprar</a>
+            </button>
+            <button class="hero__button">
+                <a class="hero__link" href="https://trato-hecho.com/como-funciona">Vender</a>
+            </button>
+        </div>
+    </main>
+    <section class="avaluo-section dropdown_menu-8">
+            <!--<button class="avaluo__button">
+                <a class="avaluo__button--link" href="https://trato-hecho.com/conoce-el-valor-de-tu-propiedad">Conoce el valor de tu propiedad<br> ¡Gratis!</a>
+            </button>-->
+    </section>
+    <footer class="footer">
+        <div class="footer__menu">
+            <ul class="footer__menu--list">
+                <li class="footer__menu--item">
+                    <a class="footer__menu--link" href="https://trato-hecho.com">>Inicio</a>
+                </li>
+                <li class="footer__menu--item">
+                    <a class="footer__menu--link" href="https://trato-hecho.com/propiedades">>Comprar</a>
+                </li>
+                <li class="footer__menu--item">
+                    <a class="footer__menu--link" href="https://trato-hecho.com/como-funciona">>¿Cómo funciona?</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__menu">
+            <h3 class="footer__menu--title">Contactanos</h3>
+            <a href="tel:3332015081" class="footer__phone">+52 33 3201 5081</a>
+            <div class="footer__menu--map">
+                <p>Av. Manuel Acuña 2952, Prados Providencia, 44670 Guadalajara, Jal.</p>
+            </div>
+        </div>
+        <div class="footer__menu">
+            <h3 class="footer__menu--title">Sígenos</h3>
+            <ul class="footer__social">
+                <li class="footer__social--item">
+                    <a class="footer__social--link" href="https://www.facebook.com/tratohechomex/" target="__blank">
+                        <img class="footer__social--img" src="https://trato-hecho.com/wp-content/uploads/2020/08/facebook.svg" alt="">
+                    </a>
+                </li>
+                <li class="footer__social--item">
+                    <a class="footer__social--link" href="https://www.instagram.com/tratohechomex/" target="__blank">
+                        <img class="footer__social--img" src="https://trato-hecho.com/wp-content/uploads/2020/08/instagram-bosquejado.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <div class="social-button">
+        <a href="https://api.whatsapp.com/send?phone=5213332015081&text=Solicito%20informaci%C3%B3n%20sobre%20la%20propiedad:%20" target="__blanck" class="social-button__link" >
+            <img class="social__img" src="https://seeklogo.com/images/W/whatsapp-icon-logo-8CA4FB831E-seeklogo.com.png" width="50" alt="whatsapp button">
+        </a>
+    </div>
+    <script>
+        /*Menu vertical de mobile*/
+
+    function myFunction(){
+        var nav_menu = document.getElementById("header_nav-menu-id")
+        if(nav_menu.style.display === "block"){
+            nav_menu.style.display = "none"
+        }
+        else {
+            nav_menu.style.display = "block"
+        }
+    }
+    </script>
+</body>
+</html>
