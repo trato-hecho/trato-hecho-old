@@ -65,7 +65,7 @@ body {
     width: 100%;
 }
 
-/*main*/
+/*main hero*/
 .main__hero, .main__form-container, .main__form--button{
     display: flex;
 }
@@ -75,6 +75,7 @@ body {
 .main__hero{
     background-image: url("https://trato-hecho.com/img/hero-background.jpg");
     height: 600px;
+    transition: all 1s ease-out
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center left;
@@ -117,7 +118,7 @@ body {
 .main__form--button{
     background-color: #fc4c02;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 0px 4px 4px 0px;
     align-items: center;
 }
 .main__form--button-icon{
@@ -125,6 +126,97 @@ body {
 }
 .main__form--button:hover{
     background-color: #39207c;
+}
+
+/*main referidos*/
+.main__referidos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    background-color: #e0ebff;
+}
+
+.main__referidos--bt{
+    padding: 10%;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background-color: #fc4c02;
+    color:#f4f4f4;
+    border-radius: 10px;
+}
+.main__referidos--bt:hover{
+    background-color: #e0ebff;
+    border: 3px solid #fc4c02;
+    color: #fc4c02;
+}
+.main__referidos--img{
+    width: 300px;
+    margin-bottom: -30px;
+}
+
+/*Social menu*/
+.social-button {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 99999999;
+}
+.social__img{
+    width: 50px;
+}
+
+
+/*footer*/
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+.footer__menu{
+    margin-bottom: 5%;
+}
+.footer__menu--title{
+    color: #39207c;
+}
+.footer__menu--link{
+    color: #fc4c02;
+    font-size: 14px;
+}
+.footer__menu--link span{
+    font-weight: 700;
+}
+.footer__menu--tel{
+    color: #fc4c02;
+}
+.footer__menu--location-text{
+    font-size: 12px;
+    white-space:wrap;
+}
+.footer__social{
+    display: flex;
+}
+.footer__social--img{
+    width: 35px;
+    margin: 10px ;
+}
+.footer__copyright-text{
+    color: #39207c;
+    font-size: 12px;
+    text-align: center;
+}
+.footer__copyright{
+    text-align: center;
+}
+.footer__copyright-link{
+    color: #39207c;
+    text-decoration: underline;
+    font-size: 12px;
+    text-align: center;
 }
 
 /*animation*/
@@ -189,6 +281,19 @@ body {
     .main__hero--slogan{
         font-size: 30px;
     }
+    .main__referidos--img{
+        width: 350px;
+        margin-bottom: -30px;
+    }
+    /*footer*/
+    .footer-section{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding:1% 5%;
+    }
+
 }
 
 @media screen and (min-width: 1024px){
@@ -203,10 +308,17 @@ body {
         padding: 10px;
     }
     /*main*/
+    .main__hero{
+        background-position: 10% 30%;
+    }
     .main__form-container{
         margin-top: 3%;
     }
     .main__form--select-container, .main__form--button{
         padding: 1% 80px ;
+    }
+    .main__referidos--img{
+        width: 400px;
+        margin-bottom: -30px;
     }
 }
