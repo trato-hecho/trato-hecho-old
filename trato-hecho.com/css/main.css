@@ -6,6 +6,7 @@
     text-decoration: none;
     text-transform: none;
     list-style: none;
+    outline: none;
 }
 
 body {
@@ -64,6 +65,68 @@ body {
     width: 100%;
 }
 
+/*main*/
+.main__hero, .main__form-container, .main__form--button{
+    display: flex;
+}
+.main__hero, .main__form--select{
+    width: 100%;
+}
+.main__hero{
+    background-image: url("https://trato-hecho.com/img/hero-background.jpg");
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main__form--select-text,.main__hero--slogan{
+    text-align: center;
+}
+.main__hero--slogan, .main__form--button{
+    color: #f4f4f4;
+}
+.main__form--button, .main__form--select{
+    border: none;
+}
+.main__hero--slogan{
+    font-weight: 600;
+}
+.main__form-container{
+    margin-top: 10%;
+    justify-content: center;
+    background-color: #f4f4f4;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+
+}
+.main__form--select-container, .main__form--button{
+    padding: 1% 20px ;
+}
+.main__form--select-container{
+    border-right: 2px solid #ddd;
+}
+.main__form--select-text{
+    font-size: 13px;
+}
+.main__form--select{
+    background-color: #f4f4f4;
+}
+.main__form--button{
+    background-color: #fc4c02;
+    cursor: pointer;
+    border-radius: 5px;
+    align-items: center;
+}
+.main__form--button-icon{
+    width: 20px;
+}
+.main__form--button:hover{
+    background-color: #39207c;
+}
+
 /*animation*/
 @keyframes growDown {
     0% {
@@ -83,6 +146,13 @@ body {
 }
 
 /*media*/
+
+@media screen and (min-width: 425px){
+    /*main*/
+    .main__form--select-container, .main__form--button{
+        padding: 1% 30px;
+    }
+}
 
 @media screen and (min-width: 768px){
     /*header*/
@@ -106,6 +176,19 @@ body {
     .header__mobile-menu{
         display: none;
     }
+    /*main*/
+    .main__form-container{
+        margin-top: 5%;
+    }
+    .main__form--select-container, .main__form--button{
+        padding: 1% 60px ;
+    }
+    .main__form--select-text{
+        font-size: 16px;
+    }
+    .main__hero--slogan{
+        font-size: 30px;
+    }
 }
 
 @media screen and (min-width: 1024px){
@@ -118,5 +201,12 @@ body {
     }
     .header__list--link{
         padding: 10px;
+    }
+    /*main*/
+    .main__form-container{
+        margin-top: 3%;
+    }
+    .main__form--select-container, .main__form--button{
+        padding: 1% 80px ;
     }
 }
