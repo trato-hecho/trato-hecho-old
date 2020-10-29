@@ -9,6 +9,7 @@
 logs/
 
 .php/
+
 ..gitignore.swp
 
 trato-hecho.com/.htaccess
@@ -16,3 +17,5 @@ trato-hecho.com/.htaccess
 trato-hecho.com/wp-content
 
 .bash_history
+
+trato-hecho.com/php/confing.php
