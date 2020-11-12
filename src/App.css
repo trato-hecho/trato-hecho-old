@@ -2,7 +2,8 @@
 :root {
     --white-soft : #f4f4f4;
     --white-hard : #fff;
-    --orange : #ec4a13
+    --orange : #ec4a13;
+    --purple: #39207c;
 }
 /*all*/
 *{
@@ -16,4 +17,6 @@
   outline: none;
   list-style: none;
 }
-
+body{
+  background-color: var(--white-soft);
+}
