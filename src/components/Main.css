@@ -1,0 +1,19 @@
+.main__section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    width: 100%;
+    height: 500px;
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/voltaic-tuner-270719.appspot.com/o/img%2Fhero-background.jpg?alt=media&token=70117eb2-ab00-4310-9869-2547d7942785');
+    background-position: 10%;
+    background-size: cover;
+}
+.main__section--title{
+    color: var(--white-soft);
+    text-align: center;
+}
+.main__section--search-button-img{
+    width: 20px;
+}
