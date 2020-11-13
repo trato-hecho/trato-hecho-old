@@ -13,7 +13,7 @@ function Header(){
 
             <header className="header">
                 <figure className="header__figure">
-                    <a className="header__figure--link">
+                    <a href="./Home" className="header__figure--link">
                         <img src="https://firebasestorage.googleapis.com/v0/b/voltaic-tuner-270719.appspot.com/o/assets%2Flogo.png?alt=media&token=f193ae53-0c6b-4a33-a4f2-3976d5d14ec1" className="header__figure--img" />
                     </a>
                 </figure>
@@ -26,7 +26,7 @@ function Header(){
                                     <a href="./Propiedades" className="header__nav-mobile--list-link">Propiedades</a>
                                 </li>
                                 <li className="header__nav-mobile--list-item">
-                                    <a href="Referidos" className="header__nav-mobile--list-link">Referidos</a>
+                                    <a href="./Referidos" className="header__nav-mobile--list-link">Referidos</a>
                                 </li>
                                 <li className="header__nav-mobile--list-item">
                                     <a href='./Login' className="header__nav-mobile--list-link">Inicia Sesión</a>

@@ -14,6 +14,126 @@
     color: var(--white-soft);
     text-align: center;
 }
+.main__section--search-container{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white-hard);
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+.main__section--search{
+    padding: 3px 20px;
+    display: flex;
+    flex-direction: column;
+    color: var(--black);
+    border-right: 1px solid var(--grey);
+}
+.main__section--search-select{
+    background-color: var(--white-hard);
+}
+.main__section--search-button-container{
+    height: 100%;
+    background-color: var(--orange);
+    border: 1px solid var(--orange);
+}
+.main__section--search-button-container:active{
+    transform: scale(1.03);
+    transition: 0.01s ease-in-out;
+}
+.main__section--search-button{
+    cursor: pointer;
+    background-color: var(--orange);
+    margin-top: 15px;
+}
 .main__section--search-button-img{
     width: 20px;
+}
+.main__section-referidos{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue-soft);
+}
+.main__section-referidos--img{
+    width: 100%;
+}
+.main__section-referidos--button-link{
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: var(--white-soft);
+    font-weight: 600;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4);
+    background-color: var(--orange);
+}
+.main__section-referidos--button-link:hover{
+    transition: 0.5s;
+    background-color: var(--white-soft);
+    border-radius: 15px;
+    color: var(--orange);
+}
+/*media*/
+
+@media screen and (min-width: 425px){
+    .main__section--search{
+        padding: 3px 35px;
+    }
+}
+@media screen and (min-width: 768px){
+    .main__section--search{
+        padding: 3px 50px;
+    }
+    .main__section--search-container{
+        margin-top: 25px;
+    }
+    .main__section-referidos{
+        padding: 10px;
+    }
+    .main__section-referidos--img{
+        width: 350px;
+    }
+}
+@media screen and (min-width: 1024px){
+    .main__section{
+        background-position: 1px -100px;
+        background-size: cover;
+        height:625px;
+
+    }
+    .main__section--title{
+        font-size: 33px;
+    }
+    .main__section--search{
+        padding: 3px 85px;
+    }
+    .main__section--search-container{
+        margin-top: 30px;
+    }
+    .main__section-referidos{
+        padding: 20px;
+    }
+    .main__section-referidos--img{
+        width: 450px;
+    }
+    .main__section-referidos--button-link{
+        padding: 15px;
+    }
+    .main__section-referidos--button-link{
+        padding: 10px 15px;
+    }
+}
+@media screen and (min-width: 1440px){
+    .main__section--title{
+        font-size: 50px;
+    }
+    .main__section--search{
+        padding: 5px 100px;
+    }
+    .main__section--search-container{
+        margin-top: 25px;
+    }
 }
