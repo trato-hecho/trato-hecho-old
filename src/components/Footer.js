@@ -51,7 +51,7 @@ function Footer(){
             </div>
             <div className="footer__copyright">
                 <span className="footer__copyright-text">© 2019 Trato Hecho.</span>
-                <a className="footer__copyright-link" href="./Terminos" target="__blank">Términos y condiciones de uso.</a>
+                <a className="footer__copyright-link" href="https://firebasestorage.googleapis.com/v0/b/voltaic-tuner-270719.appspot.com/o/documents%2Faviso-de-privacidad-trato-hecho.pdf?alt=media&token=60dbb63d-7a97-436e-bf3c-f46088d24063" target="__blank">Términos y condiciones de uso.</a>
             </div>
         </footer>
     )
