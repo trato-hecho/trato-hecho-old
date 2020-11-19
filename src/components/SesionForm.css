@@ -1,0 +1,114 @@
+.sesion__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+}
+.sesion__form--title{
+    color: var(--orange);
+}
+.sesion__form--text{
+    color: var(--purple);
+}
+.session__form--button-container{
+    display: flex;
+}
+.session__form--buttonFB{
+    margin: 10px;
+    padding: 9px ;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.session__form--buttonGL{
+    margin: 10px;
+    padding: 10px 15px;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.session__form--buttonFB{
+    background-color: #3074f6;
+}
+.session__form--buttonFB-img, .session__form--buttonGL-img{
+    width: 20px;
+    margin-right: 5px;
+}
+.session__form--buttonFB-text{
+    color: var(--white-hard);
+    font-weight: 600;
+}
+.session__form--buttonGL-text{
+    color: var(--black);
+    font-weight: 600;
+}
+.sesion__form--input-container {
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.sesion__form--label{
+    color: var(--purple);
+    font-weight: 600;
+}
+.sesion__form--input{
+    padding: 2%;
+    border-radius: 7px;
+    border: 1px solid var(--grey);
+}
+.sesion__form--input-container-checkbox{
+    margin: 5%;
+}
+.sesion__form--checkbox-label{
+    font-size: 14px;
+}
+.sesion__form--input-container-button{
+    text-align: center;
+}
+.sesion__form--input-button{
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: var(--white-hard);
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--orange);
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.sesion__form--input-button:hover{
+    transition: .5s;
+    color: var(--orange);
+    font-weight: 600;
+    background-color: var(--white-hard);
+    
+}
+.sesion__form--container-password{
+    margin: 5%;
+    text-align: center;
+}
+.sesion__form--password{
+    color: var(--purple);
+}
+.sesion__form--container-login {
+    text-align: center;
+    margin: 5%;
+}
+.sesion__form--login-text{
+    color: var(--black);
+    white-space: nowrap;
+}
+.sesion__form--login-link{
+    font-weight: 600;
+    color: var(--purple);
+    font-size: 17px;
+    cursor: pointer;
+}
+.sesion__form--login-link:hover{
+    color: var(--orange);
+}
+
+@media screen and (min-width: 768px){
+    .sesion__form--input{
+        width: 400px;
+    }
+}
