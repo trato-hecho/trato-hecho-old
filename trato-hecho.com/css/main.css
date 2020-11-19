@@ -1,0 +1,324 @@
+/*all*/
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-transform: none;
+    list-style: none;
+    outline: none;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/*header*/
+.header ,.header__list--item,.header__mobile-menu{
+    padding: 5%;
+}
+
+.header__img {
+    width: 230px;
+}
+
+.header__list--item{
+    text-align: center;
+    margin: 5% 0;
+}
+
+.header__list--link{
+    border: 1px solid #fc4c02;
+    color: #f4f4f4;
+    border-radius: 10px;
+    background-color: #fc4c02;
+    padding: 3%;
+}
+
+.header__list--link:hover{
+    color:#fc4c02;
+    background-color: #f4f4f4;
+    border-width: 3px;
+    font-weight: 600;
+
+}
+
+.header__mobile-menu{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.header__mobile-menu--icon{
+    width: 25px;
+    border: 1px solid;
+    padding: 20%;
+    background-color: #fc4c02;
+    border-radius: 20px;
+    border:none;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+#header__list-id{
+    display: none;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+}
+
+/*main hero*/
+.main__hero, .main__form-container, .main__form--button{
+    display: flex;
+}
+.main__hero, .main__form--select{
+    width: 100%;
+}
+.main__hero{
+    background-image: url("https://trato-hecho.com/img/hero-background.jpg");
+    height: 600px;
+    transition: all 1s ease-out
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main__form--select-text,.main__hero--slogan{
+    text-align: center;
+}
+.main__hero--slogan, .main__form--button{
+    color: #f4f4f4;
+}
+.main__form--button, .main__form--select{
+    border: none;
+}
+.main__hero--slogan{
+    font-weight: 600;
+}
+.main__form-container{
+    margin-top: 10%;
+    justify-content: center;
+    background-color: #f4f4f4;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+
+}
+.main__form--select-container, .main__form--button{
+    padding: 1% 20px ;
+}
+.main__form--select-container{
+    border-right: 2px solid #ddd;
+}
+.main__form--select-text{
+    font-size: 13px;
+}
+.main__form--select{
+    background-color: #f4f4f4;
+}
+.main__form--button{
+    background-color: #fc4c02;
+    cursor: pointer;
+    border-radius: 0px 4px 4px 0px;
+    align-items: center;
+}
+.main__form--button-icon{
+    width: 20px;
+}
+.main__form--button:hover{
+    background-color: #39207c;
+}
+
+/*main referidos*/
+.main__referidos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    background-color: #e0ebff;
+}
+
+.main__referidos--bt{
+    padding: 10%;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background-color: #fc4c02;
+    color:#f4f4f4;
+    border-radius: 10px;
+}
+.main__referidos--bt:hover{
+    background-color: #e0ebff;
+    border: 3px solid #fc4c02;
+    color: #fc4c02;
+}
+.main__referidos--img{
+    width: 300px;
+    margin-bottom: -30px;
+}
+
+/*Social menu*/
+.social-button {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 99999999;
+}
+.social__img{
+    width: 50px;
+}
+
+
+/*footer*/
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+.footer__menu{
+    margin-bottom: 5%;
+}
+.footer__menu--title{
+    color: #39207c;
+}
+.footer__menu--link{
+    color: #fc4c02;
+    font-size: 14px;
+}
+.footer__menu--link span{
+    font-weight: 700;
+}
+.footer__menu--tel{
+    color: #fc4c02;
+}
+.footer__menu--location-text{
+    font-size: 12px;
+    white-space:wrap;
+}
+.footer__social{
+    display: flex;
+}
+.footer__social--img{
+    width: 35px;
+    margin: 10px ;
+}
+.footer__copyright-text{
+    color: #39207c;
+    font-size: 12px;
+    text-align: center;
+}
+.footer__copyright{
+    text-align: center;
+}
+.footer__copyright-link{
+    color: #39207c;
+    text-decoration: underline;
+    font-size: 12px;
+    text-align: center;
+}
+
+/*animation*/
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+
+.growMenu{
+    animation: growDown 400ms ease-in-out forwards;
+    transform-origin: top center;
+}
+
+/*media*/
+
+@media screen and (min-width: 425px){
+    /*main*/
+    .main__form--select-container, .main__form--button{
+        padding: 1% 30px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    /*header*/
+    .header,#header__list-id{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #header__list-id{
+        border: none;
+        white-space: nowrap;
+    }
+    .header__list--item{
+        margin: 0 1%;
+        padding: 0;
+    }
+    .header__list--link{
+        padding: 5px 7px;
+        border-radius: 5px;
+    }
+    .header__mobile-menu{
+        display: none;
+    }
+    /*main*/
+    .main__form-container{
+        margin-top: 5%;
+    }
+    .main__form--select-container, .main__form--button{
+        padding: 1% 60px ;
+    }
+    .main__form--select-text{
+        font-size: 16px;
+    }
+    .main__hero--slogan{
+        font-size: 30px;
+    }
+    .main__referidos--img{
+        width: 350px;
+        margin-bottom: -30px;
+    }
+    /*footer*/
+    .footer-section{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding:1% 5%;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+    /*header*/
+    .header__img {
+        width: 300px;
+    }
+    .header__list--item{
+        margin: 0 4% 0 0;
+    }
+    .header__list--link{
+        padding: 10px;
+    }
+    /*main*/
+    .main__hero{
+        background-position: 10% 30%;
+    }
+    .main__form-container{
+        margin-top: 3%;
+    }
+    .main__form--select-container, .main__form--button{
+        padding: 1% 80px ;
+    }
+    .main__referidos--img{
+        width: 400px;
+        margin-bottom: -30px;
+    }
+}
