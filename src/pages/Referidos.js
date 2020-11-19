@@ -11,7 +11,8 @@ import { useState } from "react";
 function Referidos() {
     
     const [show,setShow] = useState(true)
-
+    const [show2,setShow2] = useState(false)
+    const [show3,setShow3] = useState(false)
 
     return (
         <>
@@ -43,7 +44,7 @@ function Referidos() {
                             </div>
                             <ReferidosMain/>
                             <div className="referidos__button-container">
-                                <button className="referidos__button">
+                                <button className="referidos__button--hover">
                                     <span>Anterior</span>
                                 </button>
                                 <button onClick={()=>setShow(!show)} className="referidos__button" >
@@ -57,7 +58,7 @@ function Referidos() {
                 }
 
                 {
-                    !show ?  <>
+                    show2 != !show ?  <>
                             <div className="referidos__section">
                                 <ul className="referidos__menu">
                                     <li className="referidos__menu-item">
@@ -77,9 +78,9 @@ function Referidos() {
                             <ReferidosForm/>
                             <div className="referidos__button-container">
                                 <button className="referidos__button">
-                                    <span>Anterior</span>
+                                    <span onClick={()=>setShow(!show)} >Anterior</span>
                                 </button>
-                                <button onClick={()=>setShow(!show)} className="referidos__button" >
+                                <button onClick={()=>setShow2(!show2)} className="referidos__button" >
                                     <span>Siguiente</span>
                                 </button>
                             </div>
@@ -90,7 +91,7 @@ function Referidos() {
                 }
 
                 {
-                    !show ?  <>
+                    !show3 != !show2 ?  <>
                             <div className="referidos__section">
                                 <ul className="referidos__menu">
                                     <li className="referidos__menu-item">
@@ -109,10 +110,10 @@ function Referidos() {
                             </div>
                             <ReferidosTerminos/>
                             <div className="referidos__button-container">
-                                <button className="referidos__button">
+                                <button onClick={()=>setShow2(!show2)}  className="referidos__button">
                                     <span>Anterior</span>
                                 </button>
-                                <button onClick={()=>setShow(!show)} className="referidos__button" >
+                                <button className="referidos__button--hover" >
                                     <span>Siguiente</span>
                                 </button>
                             </div>

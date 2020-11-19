@@ -117,6 +117,16 @@
     border: 3px solid var(--purple);
 }
 
+.referidos__button--hover{
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    color: var(--purple);
+    background-color: transparent;
+    border: 3px solid var(--purple);
+    box-shadow:1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+}
+
 @media screen and (min-width: 768px){
     .referidos__menu{
         flex-direction: row;
